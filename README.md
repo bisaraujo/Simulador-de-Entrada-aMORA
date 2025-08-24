@@ -18,7 +18,7 @@ Projeto desenvolvido como solução para o desafio **"Simulador de Entrada de Im
    cd Simulador-de-Entrada-aMORA
 
 2. Execute o programa
-
+    ```bash
     python main.py
 
 
