@@ -13,5 +13,12 @@ Projeto desenvolvido como solução para o desafio **"Simulador de Entrada de Im
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/simulador-amora.git
-   cd simulador-amora
+   git clone https://github.com/bisaraujo/Simulador-de-Entrada-aMORA.git
+
+   cd Simulador-de-Entrada-aMORA
+
+2. Execute o programa
+
+    python main.py
+
+
