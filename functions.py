@@ -24,6 +24,6 @@ def parcela_anoN_igpm(parcela_mensal, N):
 def parcela_anoN_juros(parcela_mensal, N, taxa_juros):
     dici_parcelas_juros = {}
     for ano in range(1, N+1):
-        parcela_anoN_juros = parcela_mensal * (1 + taxa_juros/100)**(N-1)  # mantém sua fórmula
+        parcela_anoN_juros = parcela_mensal * (1 + taxa_juros/100)**(ano-1)  
         dici_parcelas_juros[f'Ano {ano}'] = parcela_anoN_juros
     return dici_parcelas_juros
