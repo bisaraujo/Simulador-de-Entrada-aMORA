@@ -12,7 +12,7 @@ def parcela_mensal(total_a_guardar, anos_contrato):
 
 def parcela_anoN_igpm(parcela_mensal, N):
     dici_parcelas_igpm = {}
-    for ano in range(N, 0, -1):
+    for ano in range(1, N+1):
         parcela_anoN_igpm = parcela_mensal * (1 + 0.06)**(ano-1)
         dici_parcelas_igpm[f'Ano {ano}'] = parcela_anoN_igpm
         if ano == 1:
@@ -22,8 +22,8 @@ def parcela_anoN_igpm(parcela_mensal, N):
 
 def parcela_anoN_juros(parcela_mensal, N, taxa_juros):
     dici_parcelas_juros = {}
-    for ano in range(N, 0, -1):
-        parcela_anoN_juros = parcela_mensal * (1 + taxa_juros/100)**(N-1)
+    for ano in range(1, N+1):
+        parcela_anoN_juros = parcela_mensal * (1 + taxa_juros/100)**(ano-1)
         dici_parcelas_juros[f'Ano {ano}'] = parcela_anoN_juros
     return dici_parcelas_juros
 
